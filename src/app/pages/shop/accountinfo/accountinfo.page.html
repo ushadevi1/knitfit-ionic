@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Account Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  <ion-item lines="none"><h3>Newsletter info</h3></ion-item>
+ 
+    <ion-item>
+      <ion-label>Newsletters</ion-label>
+     
+      <ion-label><a href="#" class="">Edit</a></ion-label>
+    </ion-item>
+   
+      <ion-label>
+        <p>You are currently not subscribed to any newsletter.</p>
+      </ion-label>
+    </ion-list>
+  <ion-list>
+      <ion-item>
+        <ion-label>Address book</ion-label>
+       
+        <ion-label><a href="/home/address" class="">Manage addresses</a></ion-label>
+      </ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <ion-card-title></ion-card-title>
+            <ion-card-content>
+              <ion-card-subtitle>Default billing address</ion-card-subtitle>
+              
+              You have not set a default billing address.
+            </ion-card-content>
+              <ion-card-header><ion-card-subtitle><a routerLink='#'>Edit Address</a></ion-card-subtitle></ion-card-header>
+             
+          </ion-col>
+       
+          <ion-col size="12">
+          
+            <ion-card-title></ion-card-title>
+            <ion-card-content>
+              <ion-card-subtitle>Default shipping address</ion-card-subtitle>
+              You have not set a default shipping address.
+            </ion-card-content>
+              <ion-card-header>
+                <ion-card-subtitle>
+                  <a routerLink='#'>Edit Address</a>
+                </ion-card-subtitle>
+              </ion-card-header>
+             
+          </ion-col>
+       </ion-row>
+       </ion-grid>
+
+  
+</ion-list>
+</ion-content>

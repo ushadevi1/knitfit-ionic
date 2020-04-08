@@ -1,0 +1,84 @@
+
+<ion-content>
+  <div class="center logo">
+    <app-logo></app-logo>
+   
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <h5 class="text-center">Create Account</h5>
+  <form>
+
+    <button ion-button tooltip="I'm a tooltip below a button" positionV="bottom" arrow>
+     i
+    </button>
+    
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked" class="text-muted" >First Name<ion-icon name="information-outline" class="signup-info-icon"></ion-icon></ion-label>
+        <ion-input autocomplete="off" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked" class="text-muted">Last Name</ion-label>
+        <ion-input autocomplete="off" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked" class="text-muted">Choose Username</ion-label>
+        <ion-input autocomplete="off" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked" class="text-muted">Your Email Address</ion-label>
+        <ion-input autocomplete="off" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked" class="text-muted">Your Email Address</ion-label>
+        <ion-input autocomplete="off" type="text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="stacked" class="text-muted">Password</ion-label>
+        <ion-input autocomplete="off" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked" class="text-muted">Confirm Password</ion-label>
+        <ion-input autocomplete="off" type="text"></ion-input>
+      </ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" >
+            <p class="text-muted m-t-5">Or, sign up with</p>
+          </ion-col>
+          <ion-col size="4">
+            <!--<ion-button fill="outline" routerLink='#' class="small-text text-muted"><ion-icon name="logo-google"></ion-icon>Google</ion-button>-->
+            <ion-chip class="icon-color-google"><ion-avatar><img src="assets/icon/google-plus.png" alt="Knitfit logo">
+            </ion-avatar><ion-label class="label-google-color">Google</ion-label></ion-chip>
+          </ion-col>
+          <ion-col size="4">
+            <ion-chip class="icon-color-fb"><ion-avatar><img src="assets/icon/fb.png" alt="Knitfit logo">
+            </ion-avatar><ion-label class="label-fb-color">facebook</ion-label></ion-chip>
+          </ion-col>
+      
+        </ion-row>
+      </ion-grid>
+      <ion-item lines='none'>
+        <ion-checkbox></ion-checkbox>
+        <ion-label class="text-muted-check"> I have read and accept the <a routerLink='#' class="small-text text-muted"><b>Terms & Conditions.</b></a></ion-label>
+      </ion-item>
+      <ion-item lines='none'>
+        <ion-checkbox></ion-checkbox>
+        <ion-label class="text-muted-check"> Sign up for KnitFit Newsletter</ion-label>
+      </ion-item>
+    </ion-list>
+   
+    <ion-button expand="block" share="round" color="primary" outline>Sign up now</ion-button>
+
+    </form>
+    <ion-list>
+    <ion-item lines="none" class="border-signup-line">
+
+      <p class="text-muted-check">Back to <a routerLink='/login' class="small-text text-muted"><b>KnitFit</b></a></p>
+    </ion-item>
+  </ion-list>
+  </ion-card-content>
+</ion-card>
+</ion-content>

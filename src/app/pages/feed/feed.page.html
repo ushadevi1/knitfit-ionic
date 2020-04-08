@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>feed</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list-header color="success">Users List</ion-list-header>
+  <ion-button  share="round" color="warning" (click)="navigateToAdduserPage()">Add User</ion-button>
+  <ion-list>
+
+    <ion-item *ngFor="let user of users">
+      <ion-label><a>{{user.name}}</a></ion-label>
+    </ion-item>
+ 
+  </ion-list>
+
+</ion-content>

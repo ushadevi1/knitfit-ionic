@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Shop Patterns</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-grid>
+
+      <ion-item *ngFor="let proj of project">
+        <ion-row>
+         
+          <ion-col size="12">
+            
+            <a routerLink='/home/productdetailpage'>{{proj.title}}</a>
+          </ion-col>
+          <ion-col size="12">
+            <img src="{{proj.image}}"  class="w">
+            <!--<ion-thumbnail slot="start">
+              <ion-img [src]="proj.image" ></ion-img>
+              </ion-thumbnail>-->
+          </ion-col>
+          <ion-icon name="star" style="color: #0d665c;"></ion-icon>
+          <ion-icon name="star" style="color: #0d665c;"></ion-icon>
+          <ion-icon name="star" style="color: #0d665c;"></ion-icon>
+          <ion-icon name="star" style="color: #0d665c;"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-col size="12">
+            {{proj.amount}}
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      
+    </ion-grid>
+    </ion-list>
+</ion-content>

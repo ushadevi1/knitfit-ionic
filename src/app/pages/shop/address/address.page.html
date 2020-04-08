@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Address</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  <ion-item lines="none"><h3>Billing address</h3></ion-item>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <ion-card>
+          <ion-card-header class="center" style="margin-top: 20px;">
+            <ion-icon name="add-outline" class="plus"></ion-icon>
+             <ion-card-title class="m-t-20 m-b-15"><a routerLink='#'>Add Address</a></ion-card-title>
+           </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngFor="let proj of project">
+         
+          <ion-card-header>
+            
+            <ion-card-title>{{proj.name}}</ion-card-title>
+            <ion-card-subtitle><a routerLink='#'>Edit</a></ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            {{proj.address}}
+           <p> {{proj.email}}</p>
+          </ion-card-content>
+         
+          <ion-card-header><ion-card-subtitle><a routerLink='#'>Set as default</a></ion-card-subtitle></ion-card-header>
+          
+        </ion-card>
+      </ion-col>
+ 
+  </ion-row>
+</ion-grid>
+</ion-list>
+
+<ion-list>
+  <ion-item lines="none"><h3>Shipping address</h3></ion-item>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header class="center">
+           <ion-icon name="add-outline" class="plus"></ion-icon>
+            <ion-card-title class="m-t-20 m-b-15"><a routerLink='#'>Add Address</a></ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card *ngFor="let proj of project">
+          <ion-card-header>
+            
+            <ion-card-title>{{proj.name}}</ion-card-title>
+            <ion-card-subtitle><a routerLink='#'>Edit</a></ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            {{proj.address}}
+           <p>{{proj.email}}</p> 
+          </ion-card-content>
+          <ion-card-header><ion-card-subtitle><a routerLink='#'>Set as default</a></ion-card-subtitle></ion-card-header>
+          
+        </ion-card>
+      </ion-col>
+ 
+  </ion-row>
+</ion-grid>
+</ion-list>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-grid>
+      <ion-item *ngFor="let proj of project">
+        <ion-row>
+         
+          <ion-col size="12">
+            <a routerLink='#'> {{proj.title}} </a>
+          </ion-col>
+          <ion-col size="12">
+            <img src="{{proj.image}}"  class="w">
+          </ion-col>
+          <ion-col size="12">
+            <h6>{{proj.orderdata}}</h6>
+            <h6>{{proj.amount}}</h6>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+      <!--<ion-item>
+      <ion-row>
+        
+        <ion-col size="12">
+          <a routerLink='#'>Peekaboo cabled sweater</a>
+        </ion-col>
+        <ion-col size="12">
+          <img src="assets/images/5.jpg"  class="w">
+        </ion-col>
+        <ion-col size="12">
+          <h6>ORDER # 171-3728985-5293108
+          Order placed on
+          September 19 2019
+          Total
+          $500.0</h6>
+        </ion-col>
+      </ion-row>
+    </ion-item>--->
+    </ion-grid>
+    </ion-list>
+</ion-content>
